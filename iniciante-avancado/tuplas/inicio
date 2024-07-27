@@ -19,12 +19,18 @@ print(minhatupla[0])
 
 #=====$##=====$##=====$##=====$#
 
-minhatupla1 = tuple('Ana') #Aqui declara uma tupla da lista de caracteres
-minhatupla4 = tuple(['Ana', 'Paulo']) #Aqui uma tupla com 2 elementos
-minhatupla2 = ('Ana',) #Aqui uma tupla normal com elemento 'Ana'
-minhatupla3 = ('Ana', 'Maria')  #Aqui outra tupla normal com 2 elementos
+# minhatupla1 = tuple('Ana') #Aqui declara uma tupla da lista de caracteres
+# minhatupla4 = tuple(['Ana', 'Paulo']) #Aqui uma tupla com 2 elementos
+# minhatupla2 = ('Ana',) #Aqui uma tupla normal com elemento 'Ana'
+# minhatupla3 = ('Ana', 'Maria')  #Aqui outra tupla normal com 2 elementos
 
-print(minhatupla1, type(minhatupla1))
-print(minhatupla2, type(minhatupla2))
-print(minhatupla3, type(minhatupla3))
-print(minhatupla4, type(minhatupla4))
+# print(minhatupla1, type(minhatupla1))
+# print(minhatupla2, type(minhatupla2))
+# print(minhatupla3, type(minhatupla3))
+# print(minhatupla4, type(minhatupla4))
+
+#=====$##=====$##=====$##=====$#
+
+tupla_cores = ('azul', 'branco', 'roxo','azul', 'vermelho', 'preto',
+               'azul', 'amarelo')
+print(f"Há {tupla_cores.count('azul')} cores azul nesta tupla.")
