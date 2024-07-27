@@ -1,0 +1,15 @@
+minhatupla = tuple()
+print(minhatupla)
+
+minhatupla = (1, )
+print(minhatupla)
+
+print(type(minhatupla))
+
+print(dir(minhatupla))
+
+
+#=====$##=====$##=====$##=====$#
+
+minhatupla = (1, 2, 3)
+print(minhatupla[0])
