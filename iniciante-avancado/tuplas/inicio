@@ -32,5 +32,5 @@ print(minhatupla[0])
 #=====$##=====$##=====$##=====$#
 
 tupla_cores = ('azul', 'branco', 'roxo','azul', 'vermelho', 'preto',
-               'azul', 'amarelo')
+               'azul', 'amarelo', 'verde')
 print(f"Há {tupla_cores.count('azul')} cores azul nesta tupla.")
