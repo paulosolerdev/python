@@ -1,16 +1,27 @@
-paulo = {'nome': 'Paulo Soler',
-         'idade': '39',
-         'formação': ['Desenvolvedor de Software',
-         'Profissional Linux']}
+pessoa = {
+    'nome': 'pessoa Soler',
+    'idade': 39,
+    'formação': ['Desenvolvedor de Software', 'Profissional Linux']
+}
 
-print(paulo)
-print(f"Há {len(paulo)} pares chave:valor neste dicionário.")
-print(f'A idade {paulo.get('nome')} é de {paulo.get('idade')} anos.')
+print(pessoa)
+print(f"Há {len(pessoa)} pares chave:valor neste dicionário.")
+print(f'O nome é {pessoa.get("nome")} e a idade é de {pessoa.get("idade")} anos.')
 
-print(f'Há {len(paulo)} chaves neste dicionário, e elas são: \n\t{paulo.keys()}')
-print(f'E os valores são: \n\t{paulo.values()}')
+print(f'Há {len(pessoa)} chaves neste dicionário, e elas são: \n\t{list(pessoa.keys())}')
+print(f'E os valores são: \n\t{list(pessoa.values())}')
 
-print(f'{paulo.items()}')
+print(f'{list(pessoa.items())}')
 
-for chave, valor in paulo.items():
+for chave, valor in pessoa.items():
     print(f'Chave: {chave}, Valor: {valor}')
+
+pessoa['idade'] = 40
+print(pessoa)
+
+pessoa['formação'].append('Cientista de Dados')
+print(pessoa)
+
+pessoa['cidade'] = 'Balneário Camboriú'
+pessoa['nacionalidade'] = 'brasileiro'
+print(pessoa)
