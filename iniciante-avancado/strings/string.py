@@ -120,10 +120,22 @@
 
 # Verificando se uma string é composta por letras e números
 
-variavel = 'aa44'
+# variavel = 'aa44'
 
-print(variavel.isalnum()) # Qualquer caractere alfanumérico
+# print(variavel.isalnum()) # Qualquer caractere alfanumérico
 
-print(variavel.isalpha()) # Apenas letras
+# print(variavel.isalpha()) # Apenas letras
 
-print(variavel.isdigit()) # Apenas números
+# print(variavel.isdigit()) # Apenas números
+
+#===============================================#
+
+# Pegando dados de uma string especificando um intervalo de índice de string
+
+frase = 'Porto Alegre é uma cidade brasileira.'
+
+print(frase[26:37]) # intervalo específico
+
+print(frase[:5])   #d o início até uma posição
+
+print(frase[-9])    # de trás pra frente
