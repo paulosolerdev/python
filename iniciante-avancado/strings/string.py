@@ -90,8 +90,40 @@
 
 # Convertendo outro tipo de dado para string
 
-num1 = 5623
-num2 = str(num1)
+# num1 = 5623
+# num2 = str(num1)
 
-print(type(num1))
-print(type(num2))
+# print(type(num1))
+# print(type(num2))
+
+#===============================================#
+
+# Removendo espaços no início e no fim de uma string
+
+# frase = '     Olá, você é o visitante nº 1000'
+
+# print(frase)
+
+# print(frase.strip())
+
+#===============================================#
+
+# Convertendo todas iniciais das palavras para maiúsculo, como em um título
+
+# tema = 'O diagnóstico por imagem como ferramenta para detecção de câncer'
+
+# tema = tema.title()
+
+# print(tema)
+
+#===============================================#
+
+# Verificando se uma string é composta por letras e números
+
+variavel = 'aa44'
+
+print(variavel.isalnum()) # Qualquer caractere alfanumérico
+
+print(variavel.isalpha()) # Apenas letras
+
+print(variavel.isdigit()) # Apenas números
