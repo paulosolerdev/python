@@ -13,7 +13,9 @@ while repetir == 's':
 
     repetir = input('Cadastrar mais algum item? (S ou N): ').lower()
 
-for i in fatura:
-    print(i[0], ':', i[1])
+print(fatura) # Exibindo a lista com as informações obtidas
+
+for i in fatura: # Transformando a lista de listas em uma tabela para exibir e o valor total.
+    print(i[0], ':', i[1]) # Exibe com aparâncie de um dicionário
 
 print(f'O total da fatura é : {total:.2f}')
