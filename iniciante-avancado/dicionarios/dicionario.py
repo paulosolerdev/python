@@ -40,5 +40,13 @@ dicionario = {'Nome': 'Paulo',
               'Sexo':'Masculino',
               'Nacionalidade':'Brasileiro'}
 
-print(dicionario['Nome'])
-print(dicionario['Nacionalidade'])
+# print(dicionario['Nome'])
+# print(dicionario['Nacionalidade'])
+
+#dicionario.pop('Nacionalidade')
+
+print(dicionario)
+
+dicionario.pop('Nacionalidade')
+
+print(dicionario)
