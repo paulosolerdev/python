@@ -38,7 +38,7 @@
 dicionario = {'Nome': 'Paulo',
               'Idade': 39,
               'Sexo':'Masculino',
-              'Nacionalidade':'Brasileira'}
+              'Nacionalidade':'Brasileiro'}
 
 print(dicionario['Nome'])
 print(dicionario['Nacionalidade'])
