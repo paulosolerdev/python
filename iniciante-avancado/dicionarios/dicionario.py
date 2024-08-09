@@ -35,18 +35,20 @@
 
 # Acessando um elemento do dicionário
 
-dicionario = {'Nome': 'Paulo',
-              'Idade': 39,
-              'Sexo':'Masculino',
-              'Nacionalidade':'Brasileiro'}
+# dicionario = {'Nome': 'Paulo',
+#               'Idade': 39,
+#               'Sexo':'Masculino',
+#               'Nacionalidade':'Brasileiro'}
 
 # print(dicionario['Nome'])
 # print(dicionario['Nacionalidade'])
 
 #dicionario.pop('Nacionalidade')
 
-print(dicionario)
+# print(dicionario)
 
-dicionario.pop('Nacionalidade')
+# dicionario.pop('Nacionalidade')
 
-print(dicionario)
+# print(dicionario)
+
+#============================================#
