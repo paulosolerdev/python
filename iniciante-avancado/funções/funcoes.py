@@ -43,9 +43,32 @@
 
 #=======================#
 
-def mensagem():
-    return 'Seja bem-vindo!'
+# def mensagem():
+#     return 'Seja bem-vindo!'
 
-mensagem1 = mensagem()
+# mensagem1 = mensagem()
 
-print(mensagem1)
+# print(mensagem1)
+
+#=======================#
+
+# Criando uma função que temporariamente não faz nada
+
+# def funcao():
+#     pass
+
+# var = funcao()
+
+# print(type(var))
+
+#=======================#
+
+# Função interagindo com variável que interage com o usuário
+
+usuario = input('Digite o seu nome: ')
+
+def mensagem(nome):
+    print(f'Bem-vindo {nome}!')
+
+#print(mensagem(usuario))
+mensagem(usuario)
