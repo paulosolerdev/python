@@ -14,7 +14,7 @@ base = {
 respostas_certas = 0
 
 for pkeys, pvalues in base.items():
-    print(f'{pkeys}:{pvalues['pergunta']}')
+    print(f'{pkeys}:{pvalues["pergunta"]}')
 
     for rkeys, rvalues in pvalues['alternativas'].items():
         print(f'[{rkeys}]:{rvalues}')
