@@ -16,14 +16,14 @@ if menu == 'S':
     medico = int(input('Com qual médico deseja agendar consulta? '))
 
     if medico == 1:
-        print(f'{paciente}, Sua consulta com a Dr.a {medicos[0]} será agendada.')
+        print(f'{paciente}, sua consulta com a Dr.a {medicos[0]} será agendada.')
     if medico == 2:
-        print(f'{paciente}, Sua consulta com o Dr. {medicos[1]} será agendada.')
+        print(f'{paciente}, sua consulta com o Dr. {medicos[1]} será agendada.')
     if medico == 3:
-        print(f'{paciente}, Sua consulta com o Dr. {medicos[2]} será agendada.')
+        print(f'{paciente}, sua consulta com o Dr. {medicos[2]} será agendada.')
     if medico == 4:
-        print(f'{paciente}, Sua consulta com o Dr. {medicos[3]} será agendada.')
+        print(f'{paciente}, sua consulta com o Dr. {medicos[3]} será agendada.')
     if medico == 5:
-        print(f'{paciente}, Sua consulta com o Dr. {medicos[4]} será agendada.')
-    else:
+        print(f'{paciente}, sua consulta com o Dr. {medicos[4]} será agendada.')
+else:
         print(f'Agradecemos o seu contato!')
