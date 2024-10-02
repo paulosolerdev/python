@@ -79,13 +79,13 @@
 
 smallest = None
 
-print(f'Before {smallest}')
+print(f'Before\t ->\t {smallest}')
 
 for value in [9, 41, 12, 3, 74, 15]:
     if smallest is None:
         smallest = value
     elif value < smallest:
         smallest = value
-    print(f'{smallest} {value}')
+    print(f'{smallest}\t ->\t {value}')
 
-print(f'After {smallest}')
+print(f'After\t ->\t {smallest}')
