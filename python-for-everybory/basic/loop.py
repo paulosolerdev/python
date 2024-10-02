@@ -38,9 +38,54 @@
 
 # Filtering in a Loop
 
-print(f'Before')
+# print(f'Before')
+
+# for value in [9, 41, 12, 3, 74, 15]:
+#     if value > 20:
+#         print(f'Large number {value}')
+# print(f'After')
+
+
+#=============================================#
+
+
+
+# found = False
+# print(f'Before {found}')
+# for value in [9, 41, 12, 3, 74, 15]:
+#     if value == 3:
+#         found = True
+#     print(f'{found} {value}')
+# print(f'After {found}')
+
+
+#=============================================#
+
+
+
+# largest_so_far = -1
+
+# print(f'Before {largest_so_far}')
+
+# for the_num in [9, 41, 12, 3, 74, 15]:
+#     if the_num > largest_so_far:
+#         largest_so_far = the_num
+#     print(f'{largest_so_far} {the_num}')
+
+# print(f'After {largest_so_far}')
+
+#=============================================#
+
+
+smallest = None
+
+print(f'Before {smallest}')
 
 for value in [9, 41, 12, 3, 74, 15]:
-    if value > 20:
-        print(f'Large number {value}')
-print(f'After')
+    if smallest is None:
+        smallest = value
+    elif value < smallest:
+        smallest = value
+    print(f'{smallest} {value}')
+
+print(f'After {smallest}')
