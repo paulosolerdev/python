@@ -1,0 +1,13 @@
+Olá, Paulo!
+
+Este é um arquivo de teste para você praticar o uso do comando 'open' no Python.
+Lembre-se de usar o modo correto ao abrir o arquivo:
+- 'r' para leitura
+- 'w' para escrita
+- 'a' para adicionar conteúdo ao final do arquivo
+
+Boa sorte com seus estudos de Python!
+
+Atenciosamente,
+Seu Assistente Virtual
+
