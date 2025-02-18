@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronômetro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        #cronometro {
+            font-size: 80px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .botao {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="cronometro">00:00:00</div>
+    <button class="botao" onclick="iniciar()">Iniciar</button>
+    <button class="botao" onclick="parar()">Parar</button>
+    <button class="botao" onclick="resetar()">Resetar</button>
+
+    <script>
+        let tempoTotal = 0;
+        let cronometroRodando = false;
+        let intervalo;
+
+        function formatarTempo(segundos) {
+            let horas = Math.floor(segundos / 3600);
+            segundos %= 3600;
+            let minutos = Math.floor(segundos / 60);
+            segundos %= 60;
+            return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+        }
+
+        function atualizarCronometro() {
+            tempoTotal++;
+            document.getElementById('cronometro').textContent = formatarTempo(tempoTotal);
+        }
+
+        function iniciar() {
+            if (!cronometroRodando) {
+                cronometroRodando = true;
+                intervalo = setInterval(atualizarCronometro, 1000);
+            }
+        }
+
+        function parar() {
+            cronometroRodando = false;
+            clearInterval(intervalo);
+        }
+
+        function resetar() {
+            cronometroRodando = false;
+            tempoTotal = 0;
+            document.getElementById('cronometro').textContent = "00:00:00";
+            clearInterval(intervalo);
+        }
+    </script>
+</body>
+</html>
