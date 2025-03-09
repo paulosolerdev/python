@@ -79,16 +79,17 @@ class JogoDaVelha:
                     self.botoes[pos].config(bg="light green")
                 return True
         return False
-    
+
     def reiniciar_jogo(self):
         self.jogador_atual = "X"
         self.tabuleiro = [""] * 9
         self.jogando = True
-        
+    
         for btn in self.botoes:
-            btn.config(text="", bg="SystemButtonFace")
-            
+            btn.config(text="", bg="light gray", fg="black")
+        
         self.status_label.config(text=f"Vez do jogador: {self.jogador_atual}")
+
 
 if __name__ == "__main__":
     root = tk.Tk()
